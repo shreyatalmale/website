@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root{
+    --background-color: #fff;
+    --text-color: #555;
+    --titlt-color: #000;
+}
+
+.dark-theme{
+    --background-color: #000;
+    --text-color: #999;
+    --titlt-color: #fff;
+}
+
+
+
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.8s, color 0.8s;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 10x 0;
+    align-items: center;
+    justify-content:left;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 5px 15px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500px;
+    
+}
+
+nav ul li a:hover {
+    color: #ff914d ;
+}
+
+.toggle-btn{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.toggle-btn img{
+    width: 25px;
+    margin-left: 10px;
+}
+
+.details {
+    margin-left: 10%;
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.details h1 {
+    font-size: 50px;
+    color: (--text-color);
+    margin-bottom: 20px;
+    font-family: serif;
+    font-weight: 600;
+}
+
+span {
+    color: #ff914d;
+    font-family: serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.details p {
+    color: #555;
+    line-height: 1.5; /* Changed from 22px to 1.5 for better readability */
+}
+
+.details a {
+    background: #ff914d;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.details a:hover{
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    justify-content: space-between;
+    margin-left: auto;
+    display: block;
+}
+
+
+
+
+
